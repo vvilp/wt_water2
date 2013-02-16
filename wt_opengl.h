@@ -2,7 +2,13 @@
 #define _WT_OPENGL_H_
 
 #include <cstdio>
+#ifdef MAC
+#include <GLUT/GLUT.h>
+#endif
+
+#ifdef WIN
 #include "glut.h"
+#endif
 
 void (*key_funcs[255])();
 

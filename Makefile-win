@@ -12,7 +12,7 @@ ifeq ($(COMPILER), G++)
   else
     OBJ = o
   endif
-  COPT = 
+  COPT = -DWIN
   CCMD = g++
   OBJFLAG = -o
   EXEFLAG = -o

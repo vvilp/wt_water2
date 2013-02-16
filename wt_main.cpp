@@ -1,9 +1,19 @@
 #include "wt_all.h"
-#include "glut.h"
+
 #include "math.h"
 #include <ctime>
 #include <cstdlib>
 #include <cstdio>
+
+#ifdef MAC
+#include <GLUT/GLUT.h>
+#endif
+
+#ifdef WIN
+#include "glut.h"
+#endif
+
+
 Wt_StableFuild sf;
 
 int ix(int i, int j , int n)
